@@ -34,7 +34,7 @@ export default async function AdminPage() {
                   </td>
                 </tr>
               ) : (
-                messages.map((msg) => (
+                messages.map((msg : any) => (
                   <tr key={msg.id} className="hover:bg-zinc-800/50 transition-colors">
                     <td className="p-4 text-zinc-300">
                       {new Date(msg.createdAt).toLocaleDateString("th-TH")}
